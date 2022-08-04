@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm2
+  namespace: default
+  annotations:
+    argocd.argoproj.io/tracking-id: self-ref-bug:/ConfigMap:default/cm1
+data:
+  bbbb: "2222"
